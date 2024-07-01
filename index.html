@@ -385,11 +385,14 @@
   <div class="row">
     <div class="col-md-4">
       <p>Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Kolkata, India</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9143180183</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: harisharma9332@gmail.com</p>
+      
+      <p><a href="map:kolkata"><span class="glyphicon glyphicon-map-marker"></span></a>Kolkata, India
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689582619!2d88.26494964376381!3d22.53556493830009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1719834817067!5m2!1sen!2sin" width="70" height="70" style="border:0;" loading="lazy" name="myIframe"></iframe> -->
+      </p>
+      <p><a href="tel:+919143180183"><span class="glyphicon glyphicon-phone"></span></a>Phone: +91 9143180183</p>
+      <p><a href="mailto:harisharma9332@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a>Email: harisharma9332@gmail.com</p>
     </div>
-    <div class="col-md-8">
+    <form class="col-md-8" method="post" action="mailto:harisharma9332@gmail.com">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -402,15 +405,15 @@
       <br>
       <div class="row">
         <div class="col-md-12 form-group" >
-          <form class="pull-right" method="post" action="mailto:harisharma9332@gmail.com" >
+          <!-- <form method="post" action="mailto:harisharma9332@gmail.com" > -->
             <button class="btn pull-right" type="submit">Send Email</button>
-          </form>
+          <!-- </form> -->
           <!-- <a href="mailto:email@address.com">Click to email</a> -->
           <!-- <button class="btn pull-right" type="submit" ><a href="mailto:email@address.com" >Send</a></button> -->
         </div>
       </div>
 
-    </div>
+    </form>
   </div>
   <br>
 
