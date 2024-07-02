@@ -17,7 +17,7 @@
   </style>
   <link rel="stylesheet" href="index.css">
 </head>
-<body id="/" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -27,11 +27,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="/">Harish Sharma</a>
+      <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-star-empty"></span>Harish Sharma<span class="glyphicon glyphicon-star-empty"></span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/">HOME</a></li>
+        <li><a href="#home">HOME</a></li>
         <li><a href="#about_me">ABOUT ME</a></li>
         <li><a href="#badges">BADGES</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -49,7 +49,7 @@
             
           </ul>
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
       </ul>
     </div>
   </div>
@@ -249,6 +249,8 @@
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
   <p class="text-center"><em>Want to hire me!</em></p>
+  <p class="text-center"><em>or</em></p>
+  <p class="text-center"><em>Want to learn coding!</em></p>
   <p class="text-center"><em>Call me or write me up. Would love to hear from you!</em></p>
 
   <div class="row">
@@ -316,7 +318,7 @@
 
 <!-- Footer -->
 <footer class="text-center">
-  <a class="up-arrow" href="/" data-toggle="tooltip" title="TO TOP">
+  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
 
@@ -332,7 +334,7 @@
         <!-- <a class="btn btn-social-icon btn-flickr"><i class="fa fa-flickr"></i></a> -->
         <!-- <a class="btn btn-social-icon btn-foursquare"><i class="fa fa-foursquare"></i></a> -->
         <a class="btn btn-social-icon btn-github" href="https://github.com/harissha" data-toggle="tooltip" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-        <a class="btn btn-social-icon btn-google-plus" href="mailto:harisharma9332@gmail.com" data-toggle="tooltip" title="Gmail" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a class="btn btn-social-icon btn-google-plus" href="mailto:harisharma9332@gmail.com" data-toggle="tooltip" title="Gmail"><i class="fa fa-google-plus"></i></a>
         <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/me.sharma/" data-toggle="tooltip" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
         <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/harisharma9332/" data-toggle="tooltip" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
         <!-- <a class="btn btn-social-icon btn-tumblr"><i class="fa fa-tumblr"></i></a> -->
@@ -349,7 +351,7 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip(); 
   
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='/']").on('click', function(event) {
+  $(".navbar a, footer a[href='home']").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
