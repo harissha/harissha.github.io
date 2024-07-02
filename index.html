@@ -12,15 +12,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  
-  </style>
+  <style></style>
   <link rel="stylesheet" href="index.css">
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
-
+  
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
+    <!-- Google Translate Element Declaration -->
+    <div style="text-align: right;" id="google_translate_element"></div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -107,7 +107,7 @@
   <h3>About Me</h3>
   <!-- <p><em>I love coding!</em></p> -->
   <h5><b>Senior System Analyst @ IBM | Ex PwC | Ex Infosys | Microservices I SpringBoot I Java</b></h5>
-  <div></div>
+  <div></div>  
   <p>Harish is an accomplished Senior System Analyst at IBM with a strong background in the Information Technology and Services Industry. As a Lead Java Developer, he has demonstrated expertise in developing application programs using a wide range of technologies including Java, OracleDB, MongoDB, Kafka, Logstash, Elastic Search, Spring Boot, and AngularJS 2 and above.</p>
 
   <p>In his current project, Harish is responsible for the design, development, and deployment of new requirements, showcasing his ability to manage the full software development lifecycle. He has successfully led a team, imparting knowledge and ensuring the smooth production release of planned activities. His exceptional contributions were recognized with the Most Valuable Player award for 2018-2019. Additionally, he has been part of a team that received the Most Spirited Team award for two consecutive years and has won Insta Awards for two years.</p>
@@ -375,6 +375,16 @@ $(document).ready(function(){
   });
 })
 </script>
+
+<!-- Google Translator Script -->
+<!-- SIMPLE, HORIZONTAL, VERTICAL -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 
  
