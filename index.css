@@ -138,6 +138,15 @@ body {
   textarea {
     resize: none;
   }
+  .btn-button-blue{
+    color: aliceblue;
+    background-color: #3b5998;
+  }
+  .btn-button-blue:hover, .btn-button:focus {
+    background-color: aliceblue;
+    color: #3b5998;
+    transition: 0.5s;
+  }
   .fa {
     padding: 4px;
     width: 200px;
